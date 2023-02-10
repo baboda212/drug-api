@@ -56,7 +56,7 @@ function App() {
 
   return (
     <div className='App'>
-      <h1>drug</h1>
+      <h1>의약품 정보</h1>
       <form onSubmit={ (e) => {
         e.preventDefault();
         // 입력창에 입력된 값 참조(ref={inputRef})

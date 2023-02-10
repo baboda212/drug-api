@@ -10,7 +10,7 @@ export default function Items({drugs}) {
           return (
             <div className='item' key={key}>
               <div className='text'>
-                <h2>제품정보</h2>
+                <h2>{drug.itemName}의 제품정보</h2>
                 <ul>
                   <li>제품명: {drug.itemName}</li>
                   <li>제조사: {drug.entpName}</li>
