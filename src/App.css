@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.itemList {
+  width: 100%;
+}
+
