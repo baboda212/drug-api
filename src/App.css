@@ -15,4 +15,42 @@ figure {
 .itemList {
   width: 100%;
 }
-
+.item{
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.item h2{
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+form{
+  text-align: center;
+}
+input{
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+button{
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.page p:nth-child(1), .page p:nth-child(2){
+  text-align: right;
+}
+.page .click{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page .click a{
+  color: #fff;
+  background-color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+}

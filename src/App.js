@@ -76,21 +76,33 @@ function App() {
           ref={inputRef} type="search" name="s" placeholder='검색어 입력' />
           <button>검색</button>
           </form>
+
           {/* 페이징 */}
-          <p>Page: {pageNo} / {maxPages}</p>
-          <p>총 {totalCount}건 등록</p>
-          <a href="#" onClick={prevPage}>이전 페이지</a>
-          <span> | </span>
-          <a href="#" onClick={nextPage}>다음 페이지</a>
-          {
-            (drugs.length > 0) ?  <Items drugs={drugs} /> : (<p>자료가 없습니다.</p>)
-          }
+          <div className='page'>
+            <p>Page: {pageNo} / {maxPages}</p>
+            <p>총 {totalCount}건 등록</p>
+            <div className='click'>
+              <a href="#" onClick={prevPage}>이전 페이지</a>
+              <span> | </span>
+              <a href="#" onClick={nextPage}>다음 페이지</a>
+            </div>
+            
+            {
+              (drugs.length > 0) ?  <Items drugs={drugs} /> : (<p>자료가 없습니다.</p>)
+            }
+          </div>
+         
           {/* 페이징 */}
-          <p>Page: {pageNo} / {maxPages}</p>
-          <p>{totalCount}건 등록</p>
-          <a href="#" onClick={prevPage}>이전 페이지</a>
-          <span> | </span>
-          <a href="#" onClick={nextPage}>다음 페이지</a>
+          <div className='page'>
+            <p>Page: {pageNo} / {maxPages}</p>
+            <p>{totalCount}건 등록</p>
+            <div className='click'>
+              <a href="#" onClick={prevPage}>이전 페이지</a>
+              <span> | </span>
+              <a href="#" onClick={nextPage}>다음 페이지</a>
+            </div>
+          </div>
+          
     </div>
   );
 }
